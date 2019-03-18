@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView android:id="@+id/drugs"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="15sp"
+        android:padding="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drugs w/ Medical Prescriptions"
+        android:drawableLeft="@drawable/ic_attach_file_black_24dp"
+        android:textSize="27sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/ic_attach_file_black_24dp"
+        android:onClick="druglist"/>
+
+    <TextView
+        android:layout_below="@+id/drugs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0EAEA"/>
+</RelativeLayout>

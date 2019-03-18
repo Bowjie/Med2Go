@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="#CAC4C4"
+        app:srcCompat="@drawable/ic_keyboard_return_black_24dp"
+        tools:ignore="VectorDrawableCompat"
+        tools:targetApi="lollipop"
+        android:focusable="true"
+        android:layout_margin="10sp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".UserBlade.gamotfulldetails"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/product_pk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/itemimage"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/itemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P100.00"
+        android:textSize="35sp"
+        android:textColor="#C51818" />
+        <TextView
+            android:id="@+id/itemname"
+            android:layout_marginTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paracetamol Biogesic"
+            android:textSize="23sp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry date:"/>
+        <TextView
+            android:id="@+id/itemdesc"
+            android:layout_marginTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asd"
+            android:textSize="23sp"
+            android:textColor="#000"/>
+        <Button
+            android:layout_marginTop="20sp"
+            android:id="@+id/proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Out"/>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
